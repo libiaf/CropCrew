@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CropCrew Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="logo.webp" alt="CropCrew Logo">
+      <h1>CropCrew</h1>
+    </div>
+    <div class="menu">
+
+      <!-- <a href="index.html"><p>SEE MORE</p></a>
+        <a href="about.html"><p class="smenu">MENU</p></a>
+        <a href="contact.html"><p class="smenu">MENU</p></a> REMEMBER THIS PART!!!!!-->
+      <p class="s1menu">LEARN MORE</p>
+      <p class="smenu">YOUR CROPS</p>
+      <p class="smenu">ABOUT US</p>
+    </div>
+    <div class="profile-icon">
+      <img src="UserIcon.png" alt="UserIcon">
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="left-panel">
+      <div class="condition">
+        <h2>CONDITION</h2>
+        <h1>AMAZING</h1>
+        <img src="loading.png" alt="Wheat Icon" class="wheat-icon">
+      </div>
+      <div class="indicators">
+        <div class="indicator">
+          <p class="indivs-text">Status</p>
+          <div class="vstatus_bar">
+            <div class="vstatus" style="width: 40%;">
+              <span class="vs_text">40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="indicator">
+          <p class="indi-text">Heat</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;">
+              <span class="rp_text">40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="indicator">
+          <p class="indi-text">Water</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;">
+              <span class="rp_text">40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="indicator">
+          <p class="indi-text">Land Topography</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;">
+              <span class="rp_text">40%</span>
+            </div>
+          </div>
+        </div>
+        <div class="indicator">
+          <p class="indi-text">Ground Temp</p>
+          <div class="progress-bar">
+            <div class="progress" style="width: 40%;">
+              <span class="rp_text">40%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-section">
+      <div class="maptext">
+        <h3>Environmental Conditions Overview</h3>
+      </div>
+      <iframe src="mapa.html" class="map" frameborder="0"></iframe>>>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+
+  <!-- ALERTAS -->
+  <div id="notification" class="notification hidden">
+    <span id="notificationMessage"></span>
+    <button id="closeNotification">Cerrar</button>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
